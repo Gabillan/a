@@ -19,6 +19,7 @@
                 color:#111;
                 font-family:Arial,Sans-Serif;
                 font-weight:100;
+                animation: 2s b;
             }
             header {
                 background-color:#11111108;
@@ -32,6 +33,7 @@
                 padding-left:10px;
                 -webkit-backdrop-filter:blur(4px);
                 backdrop-filter:blur(4px);
+                animation: 1s a infinite;
             }
             main {
                 padding:10px;
@@ -101,6 +103,27 @@
                 }
                 to {
                     transform:rotateY(0deg);
+                }
+            }
+            @keyframes a {
+                0% {
+                    color: #000;
+                }
+                50% {
+                    color: #fff;
+                    rotateX: 10deg;
+                }
+                100% {
+                    color: #000;
+                    rotateX: -10deg;
+                }
+            }
+            @keyframes b {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
                 }
             }
         </style>
