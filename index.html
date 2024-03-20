@@ -33,7 +33,8 @@
                 padding-left:10px;
                 -webkit-backdrop-filter:blur(4px);
                 backdrop-filter:blur(4px);
-                animation: 1s a infinite;
+                z-index:999;
+                animation:1s a infinite;
             }
             main {
                 padding:10px;
@@ -73,7 +74,7 @@
             #wTuru {
                 border-radius:50px;
                 box-shadow:0 0 8px #111;
-                animation: 2s rotate;
+                animation:2s rotate;
             }
             .contents p {
                 padding-left:10px;
@@ -107,21 +108,21 @@
             }
             @keyframes a {
                 0% {
-                    color: #000;
+                    color:#000;
                 }
                 50% {
-                    color: #fff;
+                    color:#fff;
                 }
                 100% {
-                    color: #000;
+                    color:#000;
                 }
             }
             @keyframes b {
                 0% {
-                    opacity: 0;
+                    opacity:0;
                 }
                 100% {
-                    opacity: 1;
+                    opacity:1;
                 }
             }
         </style>
