@@ -61,7 +61,9 @@
                 border-radius:10px;
                 background-color:#fff1;
                 border:.5px solid #1111;
-                box-shadow:0 0 4px #111;
+                box-shadow:0 0 4px #fff;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
             }
             footer {
                 position:absolute,fixed;
@@ -72,7 +74,9 @@
                 margin-top:50px;
                 padding:10px;
                 padding-block: 30px;
-                background-color:#111;
+                background-color:#fff1;
+                -webkit-backdrop-filter: blur(10px);
+                backdrop-filter: blur(10px);
                 color:#fff;
             }
             h1,h2 {
@@ -82,6 +86,7 @@
                 border-left:3px solid #fff;
                 padding-left:5px;
                 margin-bottom:30px;
+                text-shadow: 0 0 4px #fff;
             }
             a {
                 color:#fff;
@@ -114,10 +119,6 @@
                 border:.5px solid #fff;
                 margin:5px;
             }
-            header h1 {
-                font-famely:futura;
-            }
-            
             #toggle {
                 display:none;
             }
@@ -145,7 +146,7 @@
                 position:fixed;
                 top:0;
                 left:-80%;
-                background-color:#fff1;
+                background-color:#0ff1;
                 -webkit-backdrop-filter:blur(4px);
                 backdrop-filter:blur(4px);
                 width:80%;
@@ -174,7 +175,7 @@
                 left:0;
             }
             #toggle:checked ~ .toggle-btn {
-                background-color: #333;
+                background-color: #0ff1;
             }
             #toggle:checked ~ .toggle-btn div {
                 background-color: #fff;
