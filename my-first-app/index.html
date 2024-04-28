@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>ToDoリスト</title>
+        <style>
+            html,body {
+                overflow-x: hidden;
+                word-break: break-all;
+                background-color: #fff;
+                color: #111;
+                font-family: Sans-Serif;
+                font-weight: 100;
+                text-align: center;
+            }
+            body {
+                padding: 10px;
+            }
+            h1 {
+                font-weight: 100;
+            }
+            form {
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px #1118;
+                padding: 5px;
+            }
+            input[type=text] {
+                caret-color: #111;
+                outline: none;
+                border: none;
+                border-radius: 0;
+                border-bottom: 1px solid #111;
+                padding: 3px;
+                font-size: 14px;
+                font-family: Monospace,Courier;
+                vertical-align: top;
+                margin: 10px;
+            }
+            input[type=text]:focus {
+                border: 1px solid #111;
+                font-size: 15px;
+            }
+            button {
+                border-radius: 3px;
+                background-color: #111;
+                color: #fff;
+                padding: 3px;
+                font-size: 14px;
+                vertical-align: top;
+                margin: 10px;
+            }
+            button:active {
+                background-color: #fff;
+                color: #111;
+                font-size: 15px;
+            }
+            li {
+                margin: 5px;
+                border: 1px solid #111;
+                list-style: square;
+                padding: 3px;
+                font-family: futura;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ToDoリスト</h1>
+        <form>
+            <input type="text" placeholder="Your_Task_Here" id="inputTask"><br>
+            <button onclick="addTask()" type="button">追加</button>
+            <button onclick="clearTask()" type="button">リセット</button>
+        </form>
+        <ul id="todos"></ul>
+        <script>
+            "use strict";
+            let inputTask = document.getElementById("inputTask");
+            let todos = document.getElementById("todos");
+            
+            function addTask() {
+                if (inputTask.value != "") {
+                    let newTask = document.createElement("li");
+                    newTask.textContent = inputTask.value;
+                    let checkbox = document.createElement("input");
+                    checkbox.type = "checkbox";
+                    todos.appendChild(newTask);
+                    newTask.appendChild(checkbox);
+                }
+                inputTask.value = "";
+            }
+            
+            function clearTask() {
+                todos.textContent = "";
+            }
+        </script>
+    </body>
+</html>
