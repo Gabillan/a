@@ -121,6 +121,8 @@
             }
             header img {
                 background-color: #fff;
+                padding: 2px;
+                margin-inline: 5px;
                 animation:3s rotate;
             }
             #toggle {
@@ -149,15 +151,16 @@
             .menu {
                 position:fixed;
                 top:0;
-                left:-80%;
-                background-color:#0ff1;
+                left:-110%;
+                background-color:#0cf;
                 -webkit-backdrop-filter:blur(4px);
                 backdrop-filter:blur(4px);
-                width:80%;
+                width:100%;
                 height:100vh;
                 padding-top:80px;
                 transition:0.2s;
                 box-shadow:0 0 10px #0008;
+                z-index: 999;
             }
             .menu ul {
                 list-style:none;
@@ -168,18 +171,21 @@
             }
             .menu ul li a {
                 text-decoration:none;
-                color:#fff;
+                color: #fff;
                 font-size:18px;
                 transition:0.1s;
             }
             .menu ul li a:hover {
-                color:#555;
+                font-weight: 500;
             }
             #toggle:checked ~ .menu {
                 left:0;
             }
             #toggle:checked ~ .toggle-btn {
-                background-color: #0ff1;
+                rotate: 630deg;
+                border-color: #0000;
+                padding: 0;
+                margin: 0;
             }
             #toggle:checked ~ .toggle-btn div {
                 background-color: #fff;
