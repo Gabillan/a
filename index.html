@@ -16,24 +16,23 @@
             * {
                 margin:0;
                 padding:0;
+                color:#00f;
             }
             html,body {
                 overflow-x:hidden;
                 width:100%;
                 height:100%;
-                background-color:#fff;
-                background-image: url('./back.webp');
-                background-size: cover;
-                background-repeat: no-repeat;
-                color:#fff;
                 font-family:"Rubik",Sans-Serif;
                 font-display: swap;
                 font-weight:300;
                 font-variant-ligatures: normal;
+                background-color:#f5f5f5;
+                background-image:radial-gradient(#0081ff 10%, transparent 10%);
+                background-size:50px 50px;
                 animation: 2s b;
             }
             header {
-                background-color:#d503ff11;
+                background-color:#00fc;
                 border:.5px solid #1111;
                 box-shadow:0 0 4px #111;
                 position:fixed;
@@ -59,9 +58,9 @@
                 padding:10px;
                 margin:20px;
                 border-radius:10px;
-                background-color:#d503ff11;
-                border:.5px solid #1111;
-                box-shadow:0 0 8px #d503ff88;
+                background-color:#fff1;
+                border:2px solid #00f;
+                box-shadow:0 0 8px #00f;
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
             }
@@ -74,22 +73,21 @@
                 margin-top:50px;
                 padding:10px;
                 padding-block: 30px;
-                background-color:#d503ff11;
+                background-color:#00f;
                 -webkit-backdrop-filter: blur(10px);
                 backdrop-filter: blur(10px);
+            }
+            footer p {
                 color:#fff;
             }
             h1,h2 {
                 font-weight:500;
             }
             h2 {
-                border-left:3px solid #fff;
+                border-left:3px solid #00f;
                 padding-left:5px;
                 margin-bottom:30px;
                 text-shadow: 0 0 4px #fff;
-            }
-            a {
-                color:#fff;
             }
             #wK {
                 padding: 5px;
@@ -97,7 +95,7 @@
                 animation:2s rotate;
                 background-color: #fff;
                 margin-block: 50px;
-                box-shadow:0 0 4px #d503ff;
+                box-shadow:0 0 4px #00f;
             }
             .contents p {
                 padding-left:10px;
@@ -108,26 +106,33 @@
             }
             p strong {
                 padding-block: 5px;
-                border-block: 1px solid #fff;
+                border-block: 1px solid #00f;
                 font-size: 20px;
             }
             #button {
                 padding:3px;
                 margin:5px;
-                border:1px solid #000;
-                border:2px solid #111;
+                border:2px solid #00f;
                 border-radius:17px;
-                background-color:#fff;
-                color:#111;
+                background-color:#00f;
+                color:#fff;
                 font-size:15px;
                 scale:1;
             }
             #hobby {
                 margin-top: 50px;
                 margin-bottom: 100px;
+                padding: 2px;
+                color: #fff;
+                background-color: #00f7;
+                border-radius: 5px;
+                border: .5px solid  #00f1;
+                box-shadow: 0 0 5px #0008;
+                -webkit-backdrop-filter: blur(4px);
+                backdrop-filter: blur(4px);
             }
             hr {
-                border:.5px solid #fff;
+                border:.5px solid #00f;
                 margin:5px;
             }
             header img {
@@ -135,6 +140,9 @@
                 padding: 2px;
                 margin-inline: 5px;
                 animation:3s rotate;
+            }
+            header h1 {
+                animation:a 1s infinite;
             }
             #toggle {
                 display:none;
@@ -163,7 +171,7 @@
                 position:fixed;
                 top:0;
                 left:-110%;
-                background-color:#d503ff88;
+                background-color:#00f;
                 -webkit-backdrop-filter:blur(4px);
                 backdrop-filter:blur(4px);
                 width:100%;
@@ -185,6 +193,9 @@
                 color: #fff;
                 font-size:18px;
                 transition:0.1s;
+            }
+            .menu hr {
+                border-color: #fff;
             }
             .menu ul li a:hover {
                 font-weight: 500;
@@ -211,13 +222,13 @@
             }
             @keyframes a {
                 0% {
-                    color:#0000;
-                }
-                50% {
                     color:#fff;
                 }
+                50% {
+                    color:#00f;
+                }
                 100% {
-                    color:#0000;
+                    color:#fff;
                 }
             }
             @keyframes b {
